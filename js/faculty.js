@@ -1,3 +1,5 @@
+// faculty.js
+
 // Modal functions
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImg");
@@ -12,6 +14,10 @@ function closeModal() {
   modal.classList.add("hidden");
   modal.classList.remove("flex");
 }
+
+// Make closeModal available globally
+window.closeModal = closeModal;
+window.openModal = openModal;
 
 // Faculty Data - exactly as you specified
 const facultyData = [
@@ -124,43 +130,50 @@ const facultyData = [
   },
 ];
 
-// Function to create faculty card - exact structure as your homepage
+// Function to create faculty card - FIXED: smaller image inside same card
 function createFacultyCard(member) {
   const card = document.createElement("div");
   card.className = "bg-gray-50 border rounded-lg shadow-sm overflow-hidden";
 
   card.innerHTML = `
-          <div class="aspect-square overflow-hidden cursor-pointer" onclick='openModal("${member.image}")'>
-            <img src="${member.image}"
-                 class="w-full h-full object-cover"
-                 alt="${member.name}" />
-          </div>
-          <div class="p-4">
-            <h3 class="font-semibold text-gray-800 text-lg">
-              ${member.name}
-            </h3>
-            <p class="text-sm text-gray-600 mt-1">
-              ${member.qualification}
-            </p>
-            <p class="text-sm text-gray-500 mt-2 flex items-center gap-1">
-              <span>📞</span> ${member.contact}
-            </p>
-          </div>
-        `;
+    <div class="flex justify-center pt-6 pb-2">
+      <div class="w-32 h-32 rounded-full overflow-hidden cursor-pointer border-2 border-purple-200 hover:border-purple-500 transition" onclick='openModal("${member.image}")'>
+        <img src="${member.image}"
+             class="w-full h-full object-cover"
+             alt="${member.name}"
+             onerror="this.src='images/faculty/user.webp'" />
+      </div>
+    </div>
+    <div class="p-4 text-center">
+      <h3 class="font-semibold text-gray-800 text-lg">
+        ${member.name}
+      </h3>
+      <p class="text-sm text-gray-600 mt-1">
+        ${member.qualification}
+      </p>
+      <p class="text-sm text-gray-500 mt-2 flex items-center justify-center gap-1">
+        <span>📞</span> ${member.contact}
+      </p>
+    </div>
+  `;
 
   return card;
 }
 
 // Populate teaching grid
 const teachingGrid = document.getElementById("teachingGrid");
-const teachingStaff = facultyData.filter((m) => m.type === "teaching");
-teachingStaff.forEach((member) => {
-  teachingGrid.appendChild(createFacultyCard(member));
-});
+if (teachingGrid) {
+  const teachingStaff = facultyData.filter((m) => m.type === "teaching");
+  teachingStaff.forEach((member) => {
+    teachingGrid.appendChild(createFacultyCard(member));
+  });
+}
 
 // Populate non-teaching grid
 const nonTeachingGrid = document.getElementById("nonTeachingGrid");
-const nonTeachingStaff = facultyData.filter((m) => m.type === "nonteaching");
-nonTeachingStaff.forEach((member) => {
-  nonTeachingGrid.appendChild(createFacultyCard(member));
-});
+if (nonTeachingGrid) {
+  const nonTeachingStaff = facultyData.filter((m) => m.type === "nonteaching");
+  nonTeachingStaff.forEach((member) => {
+    nonTeachingGrid.appendChild(createFacultyCard(member));
+  });
+}

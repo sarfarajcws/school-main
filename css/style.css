@@ -56,3 +56,15 @@ body {
         height: 50px;
         animation: spin 1s linear infinite;
       }
+
+#achievementTrack {
+  display: flex;
+  width: max-content;
+  animation: achievementScroll 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes achievementScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

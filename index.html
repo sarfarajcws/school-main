@@ -9,7 +9,7 @@
     />
     <!-- Tailwind CDN (stable) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>High School Udhwa</title>
   </head>
 
@@ -153,75 +153,77 @@
         </div>
       </section>
 
-      <!-- About Us -->
+      <!--Principal Note-->
 
       <section class="py-12 bg-white border-b">
         <div class="max-w-6xl mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Image (16:9 always) -->
+            <!-- Principal Image -->
             <div
-              class="w-full aspect-[16/9] border border-gray-300 rounded-lg overflow-hidden"
+              class="w-full aspect-[16/9] border border-gray-300 rounded-lg overflow-hidden bg-white"
             >
               <img
                 loading="lazy"
                 src="https://images.pexels.com/photos/5212334/pexels-photo-5212334.jpeg"
-                alt="School Campus"
+                alt="Principal"
                 class="w-full h-full object-cover"
               />
             </div>
 
-            <!-- Text -->
+            <!-- Message -->
             <div>
               <h2
                 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-4"
               >
-                About Our School
+                Principal’s Message
               </h2>
 
               <p class="text-gray-700 leading-relaxed mb-4">
-                High School Udhwa is a Government +2 High School focused on
-                providing quality education in a disciplined and supportive
-                environment. The institution encourages academic excellence
-                along with moral values.
+                It gives me immense pleasure to welcome you to High School
+                Udhwa. Our institution is committed to nurturing students with
+                quality education, discipline, and strong moral values to
+                prepare them for future challenges.
               </p>
 
-              <a
-                href="about.html"
-                class="inline-block text-purple-700 font-semibold hover:underline"
-              >
-                Read More →
-              </a>
+              <p class="text-gray-800 font-semibold">
+                — Principal, High School Udhwa
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!--Images-->
-
-      <section class="py-12 bg-gray-100 border-b">
-        <div class="max-w-6xl mx-auto px-4">
-          <!-- Heading -->
-          <h2 class="text-2xl font-semibold text-purple-700 mb-6">
-            Latest Images
-          </h2>
-
-          <!-- Images Grid -->
-          <div
-            id="imageGrid"
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-          ></div>
-
-          <!-- View More Button -->
-          <div class="mt-8 text-center">
-            <a
-              href="gallery.html"
-              class="inline-block px-6 py-2 border border-purple-700 text-purple-700 font-semibold rounded hover:bg-purple-700 hover:text-white transition"
-            >
-              View More
-            </a>
-          </div>
-        </div>
-      </section>
+      <!-- Achievement Section (Toppers) -->
+<section class="py-12 bg-gray-100 border-b overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between items-center mb-8">
+      <h2 class="text-2xl md:text-3xl text-purple-700 font-semibold hover:underline">
+        Our Toppers
+      </h2>
+    </div>
+    
+    <!-- Achievement Cards Container -->
+    <div class="relative overflow-hidden">
+      <div 
+        id="achievementTrack" 
+        class="flex gap-6 w-max overflow-x-auto scrollbar-hide cursor-grab"
+        style="scrollbar-width: none; -ms-overflow-style: none;"
+      >
+        <!-- Cards will be populated by JavaScript -->
+      </div>
+    </div>
+    
+    <!-- View More Button -->
+    <div class="mt-8 text-center">
+      <a
+        href="gallery.html"
+        class="inline-block px-6 py-2 border border-purple-700 text-purple-700 font-semibold rounded hover:bg-purple-700 hover:text-white transition"
+      >
+        View All Achievements
+      </a>
+    </div>
+  </div>
+</section>
 
       <!--Stats-->
       <section class="py-10 bg-white border-b">
@@ -262,41 +264,44 @@
         </div>
       </section>
 
-      <!--Principal Note-->
+      <!-- About Us -->
 
       <section class="py-12 bg-gray-100 border-b">
         <div class="max-w-6xl mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Principal Image -->
+            <!-- Image (16:9 always) -->
             <div
-              class="w-full aspect-[16/9] border border-gray-300 rounded-lg overflow-hidden bg-white"
+              class="w-full aspect-[16/9] border border-gray-300 rounded-lg overflow-hidden"
             >
               <img
                 loading="lazy"
                 src="https://images.pexels.com/photos/5212334/pexels-photo-5212334.jpeg"
-                alt="Principal"
+                alt="School Campus"
                 class="w-full h-full object-cover"
               />
             </div>
 
-            <!-- Message -->
+            <!-- Text -->
             <div>
               <h2
                 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-4"
               >
-                Principal’s Message
+                About Our School
               </h2>
 
               <p class="text-gray-700 leading-relaxed mb-4">
-                It gives me immense pleasure to welcome you to High School
-                Udhwa. Our institution is committed to nurturing students with
-                quality education, discipline, and strong moral values to
-                prepare them for future challenges.
+                High School Udhwa is a Government +2 High School focused on
+                providing quality education in a disciplined and supportive
+                environment. The institution encourages academic excellence
+                along with moral values.
               </p>
 
-              <p class="text-gray-800 font-semibold">
-                — Principal, High School Udhwa
-              </p>
+              <a
+                href="about.html"
+                class="inline-block text-purple-700 font-semibold hover:underline"
+              >
+                Read More →
+              </a>
             </div>
           </div>
         </div>
@@ -306,10 +311,11 @@
       <section class="py-12 bg-white border-b overflow-hidden">
         <div class="max-w-6xl mx-auto px-4">
           <div class="flex justify-between items-center mb-8">
-            <h2 class="text-2xl md:text-3xl text-purple-700 font-semibold hover:underline">
+            <h2
+              class="text-2xl md:text-3xl text-purple-700 font-semibold hover:underline"
+            >
               Our Faculty
             </h2>
-
           </div>
           <div class="relative overflow-hidden">
             <div
@@ -398,5 +404,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/achievements.js"></script>
   </body>
 </html>

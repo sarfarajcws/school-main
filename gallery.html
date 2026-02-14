@@ -63,20 +63,23 @@
         </div>
       </section>
 
-      <!-- Gallery Grid Section -->
-      <!-- Gallery Grid Section -->
+      <!-- Photo Gallery Section -->
       <section class="py-12 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-          <!-- Loading Indicator -->
+          <h2 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-8 border-b-2 border-purple-200 pb-2">
+            Photo Gallery
+          </h2>
+          
+          <!-- Loading Indicator for Photos -->
           <div
-            id="loadingIndicator"
+            id="photoLoadingIndicator"
             class="flex flex-col items-center justify-center py-12"
           >
             <div class="loading-spinner mb-4"></div>
-            <p class="text-gray-600 text-lg">Loading images...</p>
+            <p class="text-gray-600 text-lg">Loading photos...</p>
           </div>
 
-          <!-- Image Grid - KEEP grid class for 3 columns layout -->
+          <!-- Image Grid -->
           <div
             id="galleryGrid"
             class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
@@ -84,9 +87,9 @@
             <!-- Images will be populated by JavaScript -->
           </div>
 
-          <!-- Pagination -->
+          <!-- Photo Pagination -->
           <div
-            id="pagination"
+            id="photoPagination"
             class="hidden flex justify-center items-center gap-2 mt-10"
           >
             <!-- Pagination will be populated by JavaScript -->
@@ -94,44 +97,75 @@
 
           <!-- No Images Message -->
           <div id="noImagesMessage" class="hidden text-center py-12">
-            <p class="text-gray-500 text-lg">No images to display.</p>
+            <p class="text-gray-500 text-lg">No photos to display.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Gallery Section -->
+      <section class="py-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-8 border-b-2 border-purple-200 pb-2">
+            Video Gallery
+          </h2>
+          
+          <!-- Loading Indicator for Videos -->
+          <div
+            id="videoLoadingIndicator"
+            class="flex flex-col items-center justify-center py-12"
+          >
+            <div class="loading-spinner mb-4"></div>
+            <p class="text-gray-600 text-lg">Loading videos...</p>
+          </div>
+
+          <!-- Video Grid -->
+          <div
+            id="videoGrid"
+            class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- Videos will be populated by JavaScript -->
+          </div>
+
+          <!-- Video Pagination -->
+          <div
+            id="videoPagination"
+            class="hidden flex justify-center items-center gap-2 mt-10"
+          >
+            <!-- Pagination will be populated by JavaScript -->
+          </div>
+
+          <!-- No Videos Message -->
+          <div id="noVideosMessage" class="hidden text-center py-12">
+            <p class="text-gray-500 text-lg">No videos to display.</p>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Image Modal with Slide Controls - FIXED: 'hidden' first -->
+    <!-- Image Modal -->
     <div
       id="imageModal"
       class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50"
     >
-      <!-- Close button -->
       <button
         onclick="closeModal()"
         class="absolute top-5 right-6 text-white text-4xl hover:text-gray-300 z-50"
       >
         ✕
       </button>
-
-      <!-- Previous button -->
       <button
         onclick="prevImage()"
         class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 z-50"
       >
         ‹
       </button>
-
-      <!-- Next button -->
       <button
         onclick="nextImage()"
         class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 z-50"
       >
         ›
       </button>
-
-      <!-- Image container -->
       <div class="relative w-full max-w-5xl mx-4">
-        <!-- Loading spinner for modal -->
         <div
           id="modalLoading"
           class="hidden absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg"
@@ -144,8 +178,6 @@
           class="w-full h-auto rounded-lg"
           alt="Gallery Preview"
         />
-
-        <!-- Image counter -->
         <div
           id="imageCounter"
           class="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm"
