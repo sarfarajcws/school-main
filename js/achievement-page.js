@@ -246,10 +246,10 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="p-4">
         <h3 class="font-semibold text-gray-800 text-lg mb-1">${item.name}</h3>
         <div class="space-y-1 text-sm">
-          <p><span class="font-medium text-purple-700">Class:</span> ${item.class}</p>
-          <p><span class="font-medium text-purple-700">Session:</span> ${item.session}</p>
-          <p><span class="font-medium text-purple-700">Position:</span> ${item.position}</p>
-          <p><span class="font-medium text-purple-700">Percentage:</span> <span class="text-green-600 font-semibold">${item.percentage}</span></p>
+          <p><span class="font-semibold text-gray-800">Class:</span> ${item.class}</p>
+          <p><span class="font-semibold text-gray-800">Session:</span> ${item.session}</p>
+          <p><span class="font-semibold text-gray-800">Position:</span> ${item.position}</p>
+          <p><span class="font-semibold text-gray-800">Percentage:</span> <span class="text-green-600 font-semibold">${item.percentage}</span></p>
         </div>
         ${item.description ? `
           <div class="mt-3 pt-3 border-t border-gray-200">
