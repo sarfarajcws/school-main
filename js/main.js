@@ -170,7 +170,7 @@ if (facultyTrack) {
       qualification: "M.Sc Mathematics",
       contact: "+91 9876543210",
       image:
-        "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+        "images/faculty/user.webp",
       type: "teaching",
     },
     {
@@ -178,7 +178,7 @@ if (facultyTrack) {
       qualification: "M.A English",
       contact: "+91 9876501234",
       image:
-        "https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg",
+        "images/faculty/user.webp",
       type: "teaching",
     },
     {
@@ -186,7 +186,7 @@ if (facultyTrack) {
       qualification: "M.Sc Physics",
       contact: "+91 9812345678",
       image:
-        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
+        "images/faculty/user.webp",
       type: "teaching",
     },
   ];

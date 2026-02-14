@@ -4,26 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const galleryImages = [
     // Add your photo URLs here - organize by page (6 per page)
     // Page 1 (1-6)
-    "https://images.pexels.com/photos/17144608/pexels-photo-17144608.jpeg",
-    "https://images.pexels.com/photos/3771078/pexels-photo-3771078.jpeg",
-    "https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg",
-    "https://images.pexels.com/photos/3769982/pexels-photo-3769982.jpeg",
-    "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg",
-    "https://images.pexels.com/photos/289738/pexels-photo-289738.jpeg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
     // Page 2 (7-12)
-    "https://images.pexels.com/photos/861307/pexels-photo-861307.jpeg",
-    "https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg",
-    "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg",
-    "https://images.pexels.com/photos/5212334/pexels-photo-5212334.jpeg",
-    "https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg",
-    "https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
     // Page 3 (13-18)
-    "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
-    "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg",
-    "https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg",
-    "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
-    "https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg",
-    "https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
+    "images/gallery/sample.jpg",
     // Add more pages as needed
   ];
 

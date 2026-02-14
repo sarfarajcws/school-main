@@ -12,23 +12,33 @@
     <title>About Us - High School Udhwa</title>
   </head>
   <body class="min-h-screen flex flex-col bg-[#EEEEF0]">
-    <!-- Same Navbar as index.html -->
-    <nav class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50">
+    <!-- ================= NAVBAR ================= -->
+    <nav
+      class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50"
+    >
       <h1 class="font-bold text-lg tracking-wide">High School Udhwa</h1>
+      <!-- Desktop Menu -->
       <ul class="hidden md:flex gap-8 font-semibold">
         <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
-        <li><a href="about.html" class="text-purple-700 font-bold">About</a></li>
+        <li><a href="about.html" class="hover:text-purple-700">About</a></li>
         <li><a href="academics.html" class="hover:text-purple-700">Academics</a></li>
         <li><a href="curriculum.html" class="hover:text-purple-700">Curriculum</a></li>
         <li><a href="faculty.html" class="hover:text-purple-700">Faculty</a></li>
         <li><a href="gallery.html" class="hover:text-purple-700">Gallery</a></li>
         <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+        <li><a href="achievements.html" class="hover:text-purple-700">Achievements</a></li>
+        <li><a href="developers.html" class="hover:text-purple-700">Developers</a></li>
       </ul>
+
+      <!-- Hamburger -->
       <button id="menuBtn" class="md:hidden text-3xl">☰</button>
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white">
+    <div
+      id="mobileMenu"
+      class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white"
+    >
       <ul class="flex flex-col gap-6 p-6 font-semibold">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -37,6 +47,8 @@
         <li><a href="faculty.html">Faculty</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="developers.html">Developers</a></li>
       </ul>
     </div>
 
