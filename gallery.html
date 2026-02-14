@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gallery - High School Udhwa</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#EEEEF0]">
+    <!-- Navbar -->
+    <nav class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50">
+      <h1 class="font-bold text-lg tracking-wide">High School Udhwa</h1>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+        <li><a href="about.html" class="hover:text-purple-700">About</a></li>
+        <li><a href="academics.html" class="hover:text-purple-700">Academics</a></li>
+        <li><a href="curriculum.html" class="hover:text-purple-700">Curriculum</a></li>
+        <li><a href="faculty.html" class="hover:text-purple-700">Faculty</a></li>
+        <li><a href="gallery.html" class="text-purple-700 font-bold">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white">
+      <ul class="flex flex-col gap-6 p-6 font-semibold">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <section class="bg-gradient-to-r from-[#673EE5] to-[#8470F4] py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h1 id="heading" class="text-4xl font-bold text-white">Gallery</h1>
+        </div>
+      </section>
+
+      <!-- Gallery Grid Section -->
+      <!-- Gallery Grid Section -->
+<section class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Loading Indicator -->
+    <div id="loadingIndicator" class="flex flex-col items-center justify-center py-12">
+      <div class="loading-spinner mb-4"></div>
+      <p class="text-gray-600 text-lg">Loading images...</p>
+    </div>
+
+    <!-- Image Grid - KEEP grid class for 3 columns layout -->
+    <div id="galleryGrid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Images will be populated by JavaScript -->
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="hidden flex justify-center items-center gap-2 mt-10">
+      <!-- Pagination will be populated by JavaScript -->
+    </div>
+
+    <!-- No Images Message -->
+    <div id="noImagesMessage" class="hidden text-center py-12">
+      <p class="text-gray-500 text-lg">No images to display.</p>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <!-- Image Modal with Slide Controls - FIXED: 'hidden' first -->
+    <div id="imageModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+      <!-- Close button -->
+      <button onclick="closeModal()" class="absolute top-5 right-6 text-white text-4xl hover:text-gray-300 z-50">✕</button>
+      
+      <!-- Previous button -->
+      <button onclick="prevImage()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 z-50">
+        ‹
+      </button>
+      
+      <!-- Next button -->
+      <button onclick="nextImage()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-gray-300 z-50">
+        ›
+      </button>
+      
+      <!-- Image container -->
+      <div class="relative w-full max-w-5xl mx-4">
+        <!-- Loading spinner for modal -->
+        <div id="modalLoading" class="hidden absolute inset-0 flex items-center justify-center bg-black/50 rounded-lg">
+          <div class="loading-spinner"></div>
+        </div>
+        <img loading="lazy" id="modalImg" class="w-full h-auto rounded-lg" alt="Gallery Preview" />
+        
+        <!-- Image counter -->
+        <div id="imageCounter" class="absolute bottom-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+          1 / 1
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white font-bold mb-3">High School Udhwa</h3>
+          <p class="text-sm text-gray-400">A Government +2 High School, Udhwa, Sahibganj.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+            <li><a href="academics.html" class="hover:text-sky-400">Academics</a></li>
+            <li><a href="faculty.html" class="hover:text-sky-400">Faculty</a></li>
+            <li><a href="gallery.html" class="hover:text-sky-400">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Academics</h3>
+          <p class="text-sm text-gray-400">Classes IX – XII</p>
+          <p class="text-sm text-gray-400">Arts & Science</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Contact</h3>
+          <p class="text-sm text-gray-400">Udhwa, Sahibganj, Jharkhand</p>
+          <p class="text-sm text-gray-400">+91 00000 00000</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 py-4 text-center text-sm text-gray-500">
+        © 2026 High School Udhwa. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>

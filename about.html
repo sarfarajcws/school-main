@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>About Us - High School Udhwa</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#EEEEF0]">
+    <!-- Same Navbar as index.html -->
+    <nav class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50">
+      <h1 class="font-bold text-lg tracking-wide">High School Udhwa</h1>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+        <li><a href="about.html" class="text-purple-700 font-bold">About</a></li>
+        <li><a href="academics.html" class="hover:text-purple-700">Academics</a></li>
+        <li><a href="curriculum.html" class="hover:text-purple-700">Curriculum</a></li>
+        <li><a href="faculty.html" class="hover:text-purple-700">Faculty</a></li>
+        <li><a href="gallery.html" class="hover:text-purple-700">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white">
+      <ul class="flex flex-col gap-6 p-6 font-semibold">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <section class="bg-gradient-to-r from-[#673EE5] to-[#8470F4] py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h1 id="heading" class="text-4xl font-bold text-white">About Our School</h1>
+        </div>
+      </section>
+
+      <!-- History Section -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl font-semibold text-purple-700 mb-6">Our History</h2>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Established in 1965, High School Udhwa has been a beacon of quality education 
+                in the Sahibganj district for over 60 years. What started as a small secondary 
+                school has grown into a prestigious +2 institution offering both Arts and Science streams.
+              </p>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Over the decades, we have produced countless successful professionals including doctors, 
+                engineers, civil servants, and educators who are making significant contributions to society.
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                Our journey has been marked by continuous improvement, adapting to modern educational 
+                needs while maintaining traditional values of discipline and academic excellence.
+              </p>
+            </div>
+            <div class="aspect-[16/9] rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg" 
+                alt="School History" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision -->
+      <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow">
+              <h3 class="text-2xl font-semibold text-purple-700 mb-4">Our Mission</h3>
+              <p class="text-gray-700 leading-relaxed">
+                To provide accessible, quality education that nurtures intellectual curiosity, 
+                critical thinking, and moral values in students, preparing them to become 
+                responsible citizens and lifelong learners.
+              </p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow">
+              <h3 class="text-2xl font-semibold text-purple-700 mb-4">Our Vision</h3>
+              <p class="text-gray-700 leading-relaxed">
+                To be a center of educational excellence that empowers students from all backgrounds 
+                to achieve their full potential and contribute meaningfully to community development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Infrastructure -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-purple-700 mb-8 text-center">Our Infrastructure</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="border rounded-lg overflow-hidden">
+              <div class="aspect-video">
+                <img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">Smart Classrooms</h3>
+                <p class="text-gray-600">Modern classrooms with digital learning facilities</p>
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <div class="aspect-video">
+                <img src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">Science Labs</h3>
+                <p class="text-gray-600">Well-equipped physics, chemistry, and biology labs</p>
+              </div>
+            </div>
+            <div class="border rounded-lg overflow-hidden">
+              <div class="aspect-video">
+                <img src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg" class="w-full h-full object-cover" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg">Library</h3>
+                <p class="text-gray-600">Extensive collection of books and digital resources</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Same Footer as index.html -->
+    <footer class="bg-slate-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white font-bold mb-3">High School Udhwa</h3>
+          <p class="text-sm text-gray-400">A Government +2 High School, Udhwa, Sahibganj.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+            <li><a href="academics.html" class="hover:text-sky-400">Academics</a></li>
+            <li><a href="faculty.html" class="hover:text-sky-400">Faculty</a></li>
+            <li><a href="gallery.html" class="hover:text-sky-400">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Academics</h3>
+          <p class="text-sm text-gray-400">Classes IX – XII</p>
+          <p class="text-sm text-gray-400">Arts & Science</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Contact</h3>
+          <p class="text-sm text-gray-400">Udhwa, Sahibganj, Jharkhand</p>
+          <p class="text-sm text-gray-400">+91 00000 00000</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 py-4 text-center text-sm text-gray-500">
+        © 2026 High School Udhwa. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      btn.onclick = () => {
+        menu.classList.toggle("h-[calc(100vh-4rem)]");
+      };
+    </script>
+  </body>
+</html>

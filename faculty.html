@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Faculty - High School Udhwa</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#EEEEF0]">
+    <!-- Navbar -->
+    <nav class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50">
+      <h1 class="font-bold text-lg tracking-wide">High School Udhwa</h1>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+        <li><a href="about.html" class="hover:text-purple-700">About</a></li>
+        <li><a href="academics.html" class="hover:text-purple-700">Academics</a></li>
+        <li><a href="curriculum.html" class="hover:text-purple-700">Curriculum</a></li>
+        <li><a href="faculty.html" class="text-purple-700 font-bold">Faculty</a></li>
+        <li><a href="gallery.html" class="hover:text-purple-700">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white">
+      <ul class="flex flex-col gap-6 p-6 font-semibold">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <section class="bg-gradient-to-r from-[#673EE5] to-[#8470F4] py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h1 id="heading" class="text-4xl font-bold text-white">Our Faculty</h1>
+        </div>
+      </section>
+
+      <!-- Teaching Staff Section -->
+      <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-8 border-b-2 border-purple-200 pb-2">
+            Teaching Staff
+          </h2>
+          
+          <div id="teachingGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Non-Teaching Staff Section -->
+      <section class="py-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl font-semibold text-purple-700 mb-8 border-b-2 border-purple-200 pb-2">
+            Non-Teaching Staff
+          </h2>
+          
+          <div id="nonTeachingGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Image Modal -->
+      <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+        <button onclick="closeModal()" class="absolute top-5 right-6 text-white text-3xl">✕</button>
+        <img loading="lazy" id="modalImg" class="max-w-[90%] max-h-[85%] rounded" alt="Preview" />
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white font-bold mb-3">High School Udhwa</h3>
+          <p class="text-sm text-gray-400">A Government +2 High School, Udhwa, Sahibganj.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+            <li><a href="academics.html" class="hover:text-sky-400">Academics</a></li>
+            <li><a href="faculty.html" class="hover:text-sky-400">Faculty</a></li>
+            <li><a href="gallery.html" class="hover:text-sky-400">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Academics</h3>
+          <p class="text-sm text-gray-400">Classes IX – XII</p>
+          <p class="text-sm text-gray-400">Arts & Science</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Contact</h3>
+          <p class="text-sm text-gray-400">Udhwa, Sahibganj, Jharkhand</p>
+          <p class="text-sm text-gray-400">+91 00000 00000</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 py-4 text-center text-sm text-gray-500">
+        © 2026 High School Udhwa. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/faculty.js"></script>
+  </body>
+</html>

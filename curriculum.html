@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Curriculum - High School Udhwa</title>
+  </head>
+  <body class="min-h-screen flex flex-col bg-[#EEEEF0]">
+    <!-- Navbar -->
+    <nav class="bg-white shadow h-16 flex items-center justify-between px-6 relative z-50">
+      <h1 class="font-bold text-lg tracking-wide">High School Udhwa</h1>
+      <ul class="hidden md:flex gap-8 font-semibold">
+        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+        <li><a href="about.html" class="hover:text-purple-700">About</a></li>
+        <li><a href="academics.html" class="hover:text-purple-700">Academics</a></li>
+        <li><a href="curriculum.html" class="text-purple-700 font-bold">Curriculum</a></li>
+        <li><a href="faculty.html" class="hover:text-purple-700">Faculty</a></li>
+        <li><a href="gallery.html" class="hover:text-purple-700">Gallery</a></li>
+        <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-3xl">☰</button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="md:hidden absolute top-16 left-0 w-full bg-gradient-to-r from-[#673EE5] to-[#8470F4] h-0 overflow-hidden transition-all duration-300 z-40 shadow text-white">
+      <ul class="flex flex-col gap-6 p-6 font-semibold">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <main class="flex-grow">
+      <!-- Page Header -->
+      <section class="bg-gradient-to-r from-[#673EE5] to-[#8470F4] py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+          <h1 id="heading" class="text-4xl font-bold text-white">Curriculum</h1>
+        </div>
+      </section>
+
+      <!-- Curriculum Overview -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-purple-700 mb-8 text-center">Curriculum Overview</h2>
+          <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12">
+            Our curriculum is designed to provide students with a balanced education that combines 
+            academic excellence with practical skills and moral values, following the guidelines of 
+            the Jharkhand Academic Council (JAC).
+          </p>
+
+          <!-- Key Features -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="text-center p-6 border rounded-lg bg-gray-50">
+              <div class="text-4xl mb-3">📖</div>
+              <h3 class="font-semibold text-lg mb-2">Comprehensive Syllabus</h3>
+              <p class="text-gray-600">JAC prescribed curriculum with additional enrichment materials</p>
+            </div>
+            <div class="text-center p-6 border rounded-lg bg-gray-50">
+              <div class="text-4xl mb-3">🎯</div>
+              <h3 class="font-semibold text-lg mb-2">Competency-Based Learning</h3>
+              <p class="text-gray-600">Focus on conceptual understanding and practical application</p>
+            </div>
+            <div class="text-center p-6 border rounded-lg bg-gray-50">
+              <div class="text-4xl mb-3">⭐</div>
+              <h3 class="font-semibold text-lg mb-2">Holistic Development</h3>
+              <p class="text-gray-600">Integration of co-curricular and life skills</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Class-wise Curriculum -->
+      <section class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-purple-700 mb-8">Class-wise Curriculum</h2>
+          
+          <!-- Class 9 -->
+          <div class="mb-8 bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-purple-700 text-white px-6 py-4">
+              <h3 class="text-xl font-semibold">Class IX Curriculum</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Core Subjects</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Mathematics:</span> Number systems, Algebra, Geometry, Mensuration</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Science:</span> Physics (Motion, Force), Chemistry (Matter), Biology (Cell, Tissues)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Social Science:</span> History, Geography, Political Science, Economics</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">English:</span> Grammar, Literature, Writing Skills</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Additional Subjects</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Hindi / Sanskrit (Language Elective)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Computer Science (Fundamentals)</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Physical Education</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Art & Craft</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 10 -->
+          <div class="mb-8 bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-purple-700 text-white px-6 py-4">
+              <h3 class="text-xl font-semibold">Class X Curriculum (Board Year)</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Core Subjects</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Mathematics:</span> Advanced Algebra, Trigonometry, Statistics</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Science:</span> Chemical Reactions, Light & Electricity, Life Processes</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">Social Science:</span> Nationalism, Resources, Democratic Politics</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span><span class="font-medium">English:</span> Advanced Literature, Composition</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Board Exam Pattern</h4>
+                  <ul class="space-y-2">
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Theory: 80 marks per subject</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Internal Assessment: 20 marks</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Practical exams for Science subjects</span>
+                    </li>
+                    <li class="flex items-start">
+                      <span class="text-purple-500 mr-2">•</span>
+                      <span>Passing criteria: 33% in each subject</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 11 -->
+          <div class="mb-8 bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-purple-700 text-white px-6 py-4">
+              <h3 class="text-xl font-semibold">Class XI Curriculum (Science Stream)</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="border-r pr-4">
+                  <h4 class="font-semibold text-purple-600 mb-3">Physics</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Physical World & Measurement</li>
+                    <li>Kinematics & Laws of Motion</li>
+                    <li>Work, Energy & Power</li>
+                    <li>Properties of Matter</li>
+                    <li>Thermodynamics</li>
+                  </ul>
+                </div>
+                <div class="border-r pr-4">
+                  <h4 class="font-semibold text-purple-600 mb-3">Chemistry</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Basic Concepts & Structure of Atom</li>
+                    <li>Classification of Elements</li>
+                    <li>Chemical Bonding</li>
+                    <li>States of Matter</li>
+                    <li>Thermodynamics</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Mathematics/Biology</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Sets, Functions & Trigonometry</li>
+                    <li>Algebra & Coordinate Geometry</li>
+                    <li>Calculus Fundamentals</li>
+                    <li>Diversity in Living World</li>
+                    <li>Cell Structure & Function</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class 12 -->
+          <div class="mb-8 bg-white rounded-lg shadow overflow-hidden">
+            <div class="bg-purple-700 text-white px-6 py-4">
+              <h3 class="text-xl font-semibold">Class XII Curriculum (Science Stream)</h3>
+            </div>
+            <div class="p-6">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="border-r pr-4">
+                  <h4 class="font-semibold text-purple-600 mb-3">Physics</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Electrostatics & Current Electricity</li>
+                    <li>Magnetic Effects & EMI</li>
+                    <li>Optics & Dual Nature of Matter</li>
+                    <li>Atoms, Nuclei & Semiconductors</li>
+                    <li>Communication Systems</li>
+                  </ul>
+                </div>
+                <div class="border-r pr-4">
+                  <h4 class="font-semibold text-purple-600 mb-3">Chemistry</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Solid State & Solutions</li>
+                    <li>Electrochemistry & Chemical Kinetics</li>
+                    <li>Surface Chemistry</li>
+                    <li>p-block, d-block Elements</li>
+                    <li>Coordination Compounds</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-purple-600 mb-3">Mathematics/Biology</h4>
+                  <ul class="space-y-1 text-sm">
+                    <li>Relations, Functions & Calculus</li>
+                    <li>Vectors & 3D Geometry</li>
+                    <li>Linear Programming & Probability</li>
+                    <li>Reproduction & Genetics</li>
+                    <li>Biotechnology & Ecology</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaching Methodology -->
+      <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-3xl font-semibold text-purple-700 mb-8">Teaching Methodology</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex gap-4">
+              <div class="text-3xl text-purple-600">👩‍🏫</div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Interactive Lectures</h3>
+                <p class="text-gray-600">Engaging classroom sessions with audio-visual aids and real-world examples</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-3xl text-purple-600">🔬</div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Practical Learning</h3>
+                <p class="text-gray-600">Hand-on experiments in science labs and computer practicals</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-3xl text-purple-600">📝</div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Regular Assessments</h3>
+                <p class="text-gray-600">Weekly tests, assignments, and project work for continuous evaluation</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="text-3xl text-purple-600">👥</div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Group Activities</h3>
+                <p class="text-gray-600">Collaborative learning through group discussions and projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Curriculum -->
+      <section class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <h2 class="text-3xl font-semibold text-purple-700 mb-4">Download Detailed Curriculum</h2>
+          <p class="text-gray-700 mb-8">Get the complete subject-wise syllabus in PDF format</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition">
+              <span class="mr-2">📥</span>
+              Class IX Curriculum
+            </a>
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition">
+              <span class="mr-2">📥</span>
+              Class X Curriculum
+            </a>
+            <a href="#" class="inline-flex items-center px-6 py-3 bg-purple-700 text-white rounded-lg hover:bg-purple-800 transition">
+              <span class="mr-2">📥</span>
+              Class XI-XII Curriculum
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-300">
+      <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-white font-bold mb-3">High School Udhwa</h3>
+          <p class="text-sm text-gray-400">A Government +2 High School, Udhwa, Sahibganj.</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-sky-400">About</a></li>
+            <li><a href="academics.html" class="hover:text-sky-400">Academics</a></li>
+            <li><a href="faculty.html" class="hover:text-sky-400">Faculty</a></li>
+            <li><a href="gallery.html" class="hover:text-sky-400">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Academics</h3>
+          <p class="text-sm text-gray-400">Classes IX – XII</p>
+          <p class="text-sm text-gray-400">Arts & Science</p>
+        </div>
+        <div>
+          <h3 class="text-white font-bold mb-3">Contact</h3>
+          <p class="text-sm text-gray-400">Udhwa, Sahibganj, Jharkhand</p>
+          <p class="text-sm text-gray-400">+91 00000 00000</p>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 py-4 text-center text-sm text-gray-500">
+        © 2026 High School Udhwa. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      btn.onclick = () => {
+        menu.classList.toggle("h-[calc(100vh-4rem)]");
+      };
+    </script>
+  </body>
+</html>
